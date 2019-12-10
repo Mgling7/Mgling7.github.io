@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> baseball</title>
+	<style type="text/css"></style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makeBaseball() {
+			var baseball = document.createElement(
+				"div");
+			baseball.style.height ="200px";
+			baseball.style.width= "300px";
+			baseball.style.backgroundImage= "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjcOP_2r5E0oJj4-VZh8l-JibmtTIv_nOVEQm-9XfEcXxSP-a0&s)";
+			baseball.style.backgroundSize= "contain";
+			baseball.style.backgroundRepeat= "no-repeat";
+
+
+			document.body.appendChild(baseball
+				)
+		};
+		var i;
+
+		for (i=0; i<100; i=i+1) {
+			makeBaseball()};
+	</script>
+</body>
+</html>

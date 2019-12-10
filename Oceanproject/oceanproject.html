@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>deeeeep</title>
+
+	<style type="text/css">
+		#ocean{
+			height: 1115499px;
+			width: 100%;
+			
+
+		}
+		body{
+			margin: 0px;
+			background-image: linear-gradient(#1B7FE3, #1B1BE3, #010101);
+			background-repeat: no-repeat;
+
+    	
+		}
+		
+		#squid{
+			width: 85px;
+			height: 100px;
+			background-image:url("https://upload.wikimedia.org/wikipedia/commons/8/87/Squid_transparent.png");
+			background-size: contain;
+			position: absolute;
+			left:40px;
+			top:63360px;
+		}
+
+		#shark{
+			width: 200px;
+			height: 200px;
+			background-image:url("greatwhiteshark.png");
+			background-size: contain;
+			position: absolute;
+			top:95040px;
+			background-repeat: no-repeat;
+			right: 10px;
+			left: 10px;
+		}
+
+		#swordfish{
+			width: 300px;
+			height: 300px;
+			background-image:url("swordfish.png");
+			background-size: contain;
+			position: absolute;
+			top:316800px;
+			background-repeat: no-repeat;
+		}
+		#devilray{
+			width: 300px;
+			height: 300px;
+			background-image:url("devilray.png");
+			background-size: contain;
+			position: absolute;
+			top:633600px;
+			background-repeat: no-repeat;
+		}
+		#whale{
+			width: 300px;
+			height: 300px;
+			background-image:url("whaleshark.png");
+			background-size: contain;
+			position: absolute;
+			top:855360px;
+			background-repeat: no-repeat;
+			left: 5px;
+		}
+		#cuvier{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			top:1108800px;
+		}
+		#menu{
+			width:100%;
+			background-color:red;
+			height:100px;
+			z-index: 5;
+			left:200px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- we are going down to 3500m in the ocean, which is 11550ft (3.3 ft = 1m); we're assuming that 1 inch on the screen represents 1 foot and that there are 96 pixels per inch — we're not sure if this is right but this is what's happening right now
+ -->
+<!--  We want to have tiks for every meter and numbers every hundred meter. Everywhere tht is over 200m will have sunlight. Everywhere between 200m and 1000 meters will be a little darker. And everywhere under 1000 meters will be pitch black.  -->
+
+ <div id= "ocean">
+ 	<div id="menu">
+ 		<a href="#squid"><p>Squid</p></a>
+ 	<div id="Great White Shark">
+ 		<a href="#shark"><p>Great White Shark</p></a>
+ 	<div id="Broadbill Swordfish">
+ 		<a href="#swordfish"><p>Broadbill Swoardfish</p></a>
+ 	<div id="Chilean Devil Ray">
+ 		<a href="#devilray"><p>Chilean Devil Ray</p></a>
+ 	<div id="Whale Shark">
+ 		<a href="#whale"><p>Whale Shark</p></a>
+ 	<div id="Cuvier's Beaked Whale">
+ 		<a href="#cuvier"><p>Cuvier's Beaked Whale</p></a>
+
+ 	</div>
+ <div id= "squid">
+ </div>
+ <div id="shark">	
+</div>
+<div id="swordfish">
+</div>
+<div id="devilray">
+</div>
+<div id="whale">
+</div>
+<div id="cuvier">
+</div>
+
+
+ <script>
+ 	var ocean = document.getElementById("ocean");
+ 	
+ 	function makeTik()  {
+ 			var tik = document.createElement('div');
+ 	ocean.appendChild(tik);
+ 	tik.style.height="96px";
+ 	tik.style.width = "15px";
+ 	tik.style.borderBottom = "1px solid white";
+ 	tik.id=i;
+ 	tik.innerText=i + " feet";
+ 	tik.style.color="white";
+
+
+ 	}
+ 	for(i=0; i<11500; i=i+1) {
+ 		makeTik(i)
+ 	}
+
+
+
+ </script>
+
+</body>
+
+</html>
