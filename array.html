@@ -4,15 +4,13 @@
 	<title></title>
 
 	<style>
-		#mets{
-			width: 1500px;
-			height: 1500px;
-			background-image: url(https://external-preview.redd.it/_3iRYsyM-DNczv3aGS1-7bdGYLckZ3XbgF2s1x1zPKw.jpg?width=300&height=157.068062827&auto=webp&s=c94a67e4595b4785c8ecc3cb3489a94afc4df622);
-			background-size: center;
-			background-image: cover;
+		body{
+			
+			background-image: url(stadium.png);
+			background-position: center;
+			background-size: cover;
 			background-repeat: no-repeat;
-			font-size: 100px;
-			color: black;
+			
 
 		}
 
@@ -22,10 +20,10 @@
 			font-size: 40px;
 		}
 
-		#food{
+		#player{
 			width:300px;
 			height:300px;
-			background-color: green;
+			background-image: url(https://sports-forum.com/wp-content/uploads/2017/06/mets-logo.jpg);
 			position: relative;
 			top:10%;
 			left:20%;
@@ -37,21 +35,18 @@
 <body>
 <input></input>
 <button>ADD A METS PLAYER</button>
-		<div id="mets">
 
-<div id="food"></div>
-</div>
+<div id="player"></div>
 <script type="text/javascript">
 	
 	var array = [
 	"url(https://i1.wp.com/www.rep-am.com/wp-content/uploads/2019/07/AP19190132651903.jpg?w=349&h=233&ssl=1)", "url(https://1lal3e4eckus2d9p8g17wl8c-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/usatsi-12504673-jacob-degrom-nym-2019-1400-300x169.jpg)", "url(http://www3.pictures.zimbio.com/gi/Jeff+McNeil+puJvQIv6xicm.jpg)"
 	]
 
-	var food = document.getElementById("food");
-	var mets = document.getElementById("mets");
-	mets.addEventListener("click", function(){
+	var player = document.getElementById("player");
+	player.addEventListener("click", function(){
 
-		food.style.backgroundImage = array[Math.floor(Math.random() *3)]
+		player.style.backgroundImage = array[Math.floor(Math.random() *3)]
 
 	});
 </script>
