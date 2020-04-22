@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		body{
+			
+			background-image: url(https://us.123rf.com/450wm/mblach/mblach1409/mblach140900032/31908749-football-field-with-copy-space.jpg?ver=6);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			
+
+		}
+
+		
+
+		#player{
+			width:330px;
+			height:400px;
+			background-image: url(https://lh3.googleusercontent.com/e6nYhNBMCtFP4kGj8K3jmaRJQlSDeu4ymVDZSK7DWH-JUoG6bOpAmMlWulfuD68Yyg);
+			position: relative;
+			top:20%;
+			left:40%;
+			background-repeat: no-repeat;
+			background-size: 200px;
+		}
+	</style>
+</head>
+<body>
+
+
+<div id="player"></div>
+<script type="text/javascript">
+	
+	var array = [
+	"url(mahomes.png)", "url(barkley.png)", "url(moss.png)", "url(rice.png)", "url(deion.png)", "url(juju.png)", "url(kelce.png)", "url(williams.png)", "url(lane.png)", "url(hester.png)", "url(bailey.png)", "url(james.png)", "url(taylor.png)", "url(martinez.png)", "url(mack.png)"
+	]
+
+	var player = document.getElementById("player");
+	player.addEventListener("click", function(){
+
+		player.style.backgroundImage = array[Math.floor(Math.random() *15)]
+
+	});
+</script>
+</body>
+</html>
